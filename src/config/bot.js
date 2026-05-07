@@ -82,104 +82,73 @@ export const botConfig = {
   },
 
   // =========================
-// EMBED COLORS & BRANDING
-// =========================
-// IMPORTANT: This is the SINGLE SOURCE OF TRUTH for all bot colors
-embeds: {
-  colors: {
+  // EMBED COLORS & BRANDING
+  // =========================
+  // IMPORTANT: This is the SINGLE SOURCE OF TRUTH for all bot colors
+  embeds: {
+    colors: {
+      // Main brand colors.
+      primary: "#336699", 
+      secondary: "#2F3136", 
 
-    // =========================================
-    // NEXUS AIM CORE BRAND COLORS
-    // =========================================
+      // Standard status colors for success/error/warning/info messages.
+      success: "#57F287", 
+      error: "#ED4245", 
+      warning: "#FEE75C", 
+      info: "#3498DB", 
 
-    primary: "#FF1E1E",
-    secondary: "#0D0D0D",
-    accent: "#B30000",
-    chrome: "#C0C0C0",
-    glow: "#FF3B3B",
+      // Neutral utility colors.
+      light: "#FFFFFF",
+      dark: "#202225",
+      gray: "#99AAB5",
 
-    // =========================================
-    // STATUS COLORS
-    // =========================================
+      // Discord-style palette shortcuts.
+      blurple: "#5865F2",
+      green: "#57F287",
+      yellow: "#FEE75C",
+      fuchsia: "#EB459E",
+      red: "#ED4245",
+      black: "#000000",
 
-    success: "#00FF85",
-    error: "#FF2D55",
-    warning: "#FFB800",
-    info: "#00C2FF",
+      // Feature-specific colors.
+      giveaway: {
+        active: "#57F287",
+        ended: "#ED4245",
+      },
+      ticket: {
+        open: "#57F287",
+        claimed: "#FAA61A",
+        closed: "#ED4245",
+        pending: "#99AAB5",
+      },
+      economy: "#F1C40F",
+      birthday: "#E91E63",
+      moderation: "#9B59B6",
 
-    // =========================================
-    // UTILITY COLORS
-    // =========================================
-
-    light: "#FFFFFF",
-    dark: "#050505",
-    gray: "#8B8B8B",
-    black: "#000000",
-
-    // =========================================
-    // DISCORD STYLE COLORS
-    // =========================================
-
-    blurple: "#5865F2",
-    green: "#00FF85",
-    yellow: "#FFB800",
-    fuchsia: "#FF008C",
-    red: "#FF1E1E",
-
-    // =========================================
-    // GIVEAWAYS
-    // =========================================
-
-    giveaway: {
-      active: "#FF1E1E",
-      ended: "#5A0000",
+      // Ticket priority color mapping.
+      priority: {
+        none: "#95A5A6",
+        low: "#3498db",
+        medium: "#2ecc71",
+        high: "#f1c40f",
+        urgent: "#e74c3c",
+      },
     },
-
-    // =========================================
-    // TICKETS
-    // =========================================
-
-    ticket: {
-      open: "#00FF85",
-      claimed: "#FFB800",
-      closed: "#FF2D55",
-      pending: "#8B8B8B",
+    footer: {
+      // Default footer text used in bot embeds.
+      text: "Titan Bot",
+      // Footer icon URL (null = no icon).
+      icon: null,
     },
-
-    // =========================================
-    // FEATURE COLORS
-    // =========================================
-
-    economy: "#FFD700",
-    birthday: "#FF008C",
-    moderation: "#8A2BE2",
-
-    // =========================================
-    // PRIORITY COLORS
-    // =========================================
-
-    priority: {
-      none: "#707070",
-      low: "#00FF85",
-      medium: "#00C2FF",
-      high: "#FFB800",
-      urgent: "#FF1E1E",
+    // Default thumbnail URL for embeds (null = no thumbnail).
+    thumbnail: null,
+    author: {
+      // Optional default embed author block.
+      name: null,
+      icon: null,
+      url: null,
     },
   },
-
-  footer: {
-    text: "NEXUS AIM • ELITE GAMING TECHNOLOGY",
-    icon: null,
-  },
-
-  thumbnail: null,
-
-  author: {
-    name: "NEXUS AIM",
-    icon: null,
-    url: "https://nexusaim.mysellauth.com",
-  },
-},
 
   // =========================
   // ECONOMY SETTINGS
